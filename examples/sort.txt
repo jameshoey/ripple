@@ -1,0 +1,920 @@
+//original list
+l1 = (10);
+l2 = (12);
+l3 = (5);
+l4 = (20);
+l5 = (1);
+l6 = (4);
+l7 = (11);
+l8 = (19);
+l9 = (3);
+l10 = (13);
+
+l11 = (7);
+l12 = (6);
+l13 = (14);
+l14 = (17);
+l15 = (15);
+l16 = (2);
+l17 = (9);
+l18 = (16);
+l19 = (8);
+l20 = (18);
+
+//split into four lists of five elements
+u1 = (l1);
+u2 = (l2);
+u3 = (l3);
+u4 = (l4);
+u5 = (l5);
+
+x1 = (l6);
+x2 = (l7);
+x3 = (l8);
+x4 = (l9);
+x5 = (l10);
+
+y1 = (l11);
+y2 = (l12);
+y3 = (l13);
+y4 = (l14);
+y5 = (l15);
+
+z1 = (l16);
+z2 = (l17);
+z3 = (l18);
+z4 = (l19);
+z5 = (l20);
+	
+	
+//sort the u list
+countu1 = (5);
+countu2 = (5);
+tempu = (0);
+
+//sort the x list
+countx1 = (5);
+countx2 = (5);
+tempx = (0);
+
+//sort the y list
+county1 = (5);
+county2 = (5);
+tempy = (0);
+
+//sort the z list
+countz1 = (5);
+countz2 = (5);
+tempz = (0);
+
+//parallel sorting of the four individual lists
+par {
+	par {
+		while w1.0 (countu1 > 1) do		
+			while w2.0 (countu2 > 1) do		
+				if i1.0 (countu2 == 5) then			
+					if i2.0 (u1 > u2) then
+							tempu = (u2);
+							u2 = (u1);
+							u1 = (tempu);
+					else
+						X += (3);
+					fi;				
+				else					
+					if i3.0 (countu2 == 4) then	
+						if i4.0 (u2 > u3) then
+								tempu = (u3);
+								u3 = (u2);
+								u2 = (tempu);
+						else
+							X += (3);
+						fi;		
+					else					
+						if i5.0 (countu2 == 3) then	
+							if i6.0 (u3 > u4) then
+									tempu = (u4);
+									u4 = (u3);
+									u3 = (tempu);
+							else
+								X += (3);
+							fi;			
+						else						
+							if i7.0 (countu2 == 2) then			
+								if i8.0 (u4 > u5) then
+										tempu = (u5);
+										u5 = (u4);
+										u4 = (tempu);
+								else
+									X += (3);
+								fi;						
+							else							
+								X += (3);
+							fi;
+						fi;
+					fi;			
+				fi;		
+				countu2 -= (1);		
+			elihw;
+			countu2 = (5);
+			countu1 -= (1);
+		elihw;
+	}
+	{
+		while w5.0 (county1 > 1) do
+			while w6.0 (county2 > 1) do
+				if i17.0 (county2 == 5) then	
+					if i18.0 (y1 > y2) then
+							tempy = (y2);
+							y2 = (y1);
+							y1 = (tempy);
+					else
+						X += (3);
+					fi;		
+				else				
+					if i19.0 (county2 == 4) then	
+						if i20.0 (y2 > y3) then
+								tempy = (y3);
+								y3 = (y2);
+								y2 = (tempy);
+						else
+							X += (3);
+						fi;		
+					else				
+						if i21.0 (county2 == 3) then	
+							if i22.0 (y3 > y4) then
+									tempy = (y4);
+									y4 = (y3);
+									y3 = (tempy);
+							else
+								X += (3);
+							fi;			
+						else					
+							if i23.0 (county2 == 2) then				
+								if i24.0 (y4 > y5) then
+										tempy = (y5);
+										y5 = (y4);
+										y4 = (tempy);
+								else
+									X += (3);
+								fi;				
+							else							
+								X += (3);
+							fi;
+						fi;
+					fi;			
+				fi;		
+				county2 -= (1);		
+			elihw;
+			county2 = (5);
+			county1 -= (1);
+		elihw;
+	
+	}
+}
+{
+	par {
+		while w3.0 (countx1 > 1) do
+			while w4.0 (countx2 > 1) do
+				if i9.0 (countx2 == 5) then	
+					if i10.0 (x1 > x2) then
+							tempx = (x2);
+							x2 = (x1);
+							x1 = (tempx);
+					else
+						X += (3);
+					fi;		
+				else			
+					if i11.0 (countx2 == 4) then	
+						if i12.0 (x2 > x3) then
+								tempx = (x3);
+								x3 = (x2);
+								x2 = (tempx);
+						else
+							X += (3);
+						fi;	
+					else			
+						if i13.0 (countx2 == 3) then	
+							if i14.0 (x3 > x4) then
+									tempx = (x4);
+									x4 = (x3);
+									x3 = (tempx);
+							else
+								X += (3);
+							fi;	
+						else	
+							if i15.0 (countx2 == 2) then	
+								if i16.0 (x4 > x5) then
+										tempx = (x5);
+										x5 = (x4);
+										x4 = (tempx);
+								else
+									X += (3);
+								fi;					
+							else		
+								X += (3);
+							fi;
+						fi;
+					fi;		
+				fi;		
+				countx2 -= (1);		
+			elihw;
+			countx2 = (5);
+			countx1 -= (1);
+		elihw;
+	}
+	{
+		while w7.0 (countz1 > 1) do
+			while w8.0 (countz2 > 1) do
+				if i25.0 (countz2 == 5) then	
+					if i26.0 (z1 > z2) then
+							tempz = (z2);
+							z2 = (z1);
+							z1 = (tempz);
+					else
+						X += (3);
+					fi;			
+				else		
+					if i27.0 (countz2 == 4) then	
+						if i28.0 (z2 > z3) then
+								tempz = (z3);
+								z3 = (z2);
+								z2 = (tempz);
+						else
+							X += (3);
+						fi;	
+					else					
+						if i29.0 (countz2 == 3) then	
+							if i30.0 (z3 > z4) then
+									tempz = (z4);
+									z4 = (z3);
+									z3 = (tempz);
+							else
+								X += (3);
+							fi;	
+						else				
+							if i31.0 (countz2 == 2) then	
+								if i32.0 (z4 > z5) then
+										tempz = (z5);
+										z5 = (z4);
+										z4 = (tempz);
+								else
+									X += (3);
+								fi;	
+							else	
+								X += (3);
+							fi;
+						fi;
+					fi;							
+				fi;		
+				countz2 -= (1);		
+			elihw;
+			countz2 = (5);
+			countz1 -= (1);
+		elihw;
+	}
+}
+	
+//the sorted lists are now merged - two at a time in parallel
+
+p2par1 = (0);
+p2par2 = (0);
+p2par3 = (0);
+p2par4 = (0);
+p2par5 = (0);
+p2par6 = (0);
+p2par7 = (0);
+p2par8 = (0);
+p2par9 = (0);
+p2par10 = (0);
+
+countmerge2 = (10);
+leftmerge2 = (0);
+rightmerge2 = (0);
+topleft2 = (0);
+topright2 = (0);
+
+p1par1 = (0);
+p1par2 = (0);
+p1par3 = (0);
+p1par4 = (0);
+p1par5 = (0);
+p1par6 = (0);
+p1par7 = (0);
+p1par8 = (0);
+p1par9 = (0);
+p1par10 = (0);
+
+countmerge1 = (10);
+leftmerge1 = (0);
+rightmerge1 = (0);
+topleft1 = (0);
+topright1 = (0);
+
+par {
+
+	while w9.0 (countmerge2 > 0) do
+	
+		if i33.0 (leftmerge2 == 0) then
+			topleft2 = (y1);
+		else
+			if i34.0 (leftmerge2 == 1) then
+				topleft2 = (y2);
+			else
+				if i35.0 (leftmerge2 == 2) then
+					topleft2 = (y3);
+				else
+					if 36.0 (leftmerge2 == 3) then
+						topleft2 = (y4);
+					else
+						if 37.0 (leftmerge2 == 4) then
+							topleft2 = (y5);
+						else
+							topleft2 = (1000);
+						fi;
+					fi;
+				fi;
+			fi;
+		fi;
+	
+		if i38.0 (rightmerge2 == 0) then
+			topright2 = (z1);
+		else
+			if i39.0 (rightmerge2 == 1) then
+				topright2 = (z2);
+			else
+				if i40.0 (rightmerge2 == 2) then
+					topright2 = (z3);
+				else
+					if 41.0 (rightmerge2 == 3) then
+						topright2 = (z4);
+					else
+						if 42.0 (rightmerge2 == 4) then
+							topright2 = (z5);
+						else
+							topright2 = (1000);
+						fi;
+					fi;
+				fi;
+			fi;
+		fi;
+
+		//now merge the two lists together - determine the smallest of the two heads and insert this into the correct position
+		if i43.0 (countmerge2 == 10) then
+			if i44.0 (topleft2 < topright2) then
+				p2par1 = (topleft2);
+				leftmerge2 += (1);
+			else
+				p2par1 = (topright2);
+				rightmerge2 += (1);
+			fi;
+		else
+			if i45.0 (countmerge2 == 9) then
+				if i46.0 (topleft2 < topright2) then
+					p2par2 = (topleft2);
+					leftmerge2 += (1);
+				else
+					p2par2 = (topright2);
+					rightmerge2 += (1);
+				fi;
+			else
+				if i47.0 (countmerge2 == 8) then
+					if i48.0 (topleft2 < topright2) then
+						p2par3 = (topleft2);
+						leftmerge2 += (1);
+					else
+						p2par3 = (topright2);
+						rightmerge2 += (1);
+					fi;
+				else
+					if i49.0 (countmerge2 == 7) then
+						if i50.0 (topleft2 < topright2) then
+							p2par4 = (topleft2);
+							leftmerge2 += (1);
+						else
+							p2par4 = (topright2);
+							rightmerge2 += (1);
+						fi;
+					else
+						if i51.0 (countmerge2 == 6) then
+							if i52.0 (topleft2 < topright2) then
+								p2par5 = (topleft2);
+								leftmerge2 += (1);
+							else
+								p2par5 = (topright2);
+								rightmerge2 += (1);
+							fi;
+						else
+							if i53.0 (countmerge2 == 5) then
+								if i54.0 (topleft2 < topright2) then
+									p2par6 = (topleft2);
+									leftmerge2 += (1);
+								else
+									p2par6 = (topright2);
+									rightmerge2 += (1);
+								fi;
+							else
+								if i55.0 (countmerge2 == 4) then
+									if i56.0 (topleft2 < topright2) then
+										p2par7 = (topleft2);
+										leftmerge2 += (1);
+									else
+										p2par7 = (topright2);
+										rightmerge2 += (1);
+									fi;
+								else
+									if i57.0 (countmerge2 == 3) then
+										if i58.0 (topleft2 < topright2) then
+											p2par8 = (topleft2);
+											leftmerge2 += (1);
+										else
+											p2par8 = (topright2);
+											rightmerge2 += (1);
+										fi;
+									else
+										if i59.0 (countmerge2 == 2) then
+											if i60.0 (topleft2 < topright2) then
+												p2par9 = (topleft2);
+												leftmerge2 += (1);
+											else
+												p2par9 = (topright2);
+												rightmerge2 += (1);
+											fi;
+										else
+											if i61.0 (countmerge2 == 1) then
+												if i62.0 (topleft2 < topright2) then
+													p2par10 = (topleft2);
+													leftmerge2 += (1);
+												else
+													p2par10 = (topright2);
+													rightmerge2 += (1);
+												fi;
+											else
+												X += (3);
+											fi;												
+										fi;											
+									fi;										
+								fi;									
+							fi;								
+						fi;							
+					fi;					
+				fi;				
+			fi;
+			
+		fi;
+		countmerge2 -= (1);
+	elihw;
+}
+{
+	while w10.0 (countmerge1 > 0) do
+	
+		if i63.0 (leftmerge1 == 0) then
+			topleft1 = (u1);
+		else
+			if i64.0 (leftmerge1 == 1) then
+				topleft1 = (u2);
+			else
+				if i65.0 (leftmerge1 == 2) then
+					topleft1 = (u3);
+				else
+					if 66.0 (leftmerge1 == 3) then
+						topleft1 = (u4);
+					else
+						if 67.0 (leftmerge1 == 4) then
+							topleft1 = (u5);
+						else
+							topleft1 = (1000);
+						fi;
+					fi;
+				fi;
+			fi;
+		fi;
+	
+		if i68.0 (rightmerge1 == 0) then
+			topright1 = (x1);
+		else
+			if i69.0 (rightmerge1 == 1) then
+				topright1 = (x2);
+			else
+				if i70.0 (rightmerge1 == 2) then
+					topright1 = (x3);
+				else
+					if 71.0 (rightmerge1 == 3) then
+						topright1 = (x4);
+					else
+						if 72.0 (rightmerge1 == 4) then
+							topright1 = (x5);
+						else
+							topright1 = (1000);
+						fi;
+					fi;
+				fi;
+			fi;
+		fi;
+
+		//now merge the two lists together - determine the smallest of the two heads and insert this into the correct position
+		if i73.0 (countmerge1 == 10) then
+			if i74.0 (topleft1 < topright1) then
+				p1par1 = (topleft1);
+				leftmerge1 += (1);
+			else
+				p1par1 = (topright1);
+				rightmerge1 += (1);
+			fi;
+		else
+			if i75.0 (countmerge1 == 9) then
+				if i76.0 (topleft1 < topright1) then
+					p1par2 = (topleft1);
+					leftmerge1 += (1);
+				else
+					p1par2 = (topright1);
+					rightmerge1 += (1);
+				fi;
+			else
+				if i77.0 (countmerge1 == 8) then
+					if i78.0 (topleft1 < topright1) then
+						p1par3 = (topleft1);
+						leftmerge1 += (1);
+					else
+						p1par3 = (topright1);
+						rightmerge1 += (1);
+					fi;
+				else
+					if i79.0 (countmerge1 == 7) then
+						if i80.0 (topleft1 < topright1) then
+							p1par4 = (topleft1);
+							leftmerge1 += (1);
+						else
+							p1par4 = (topright1);
+							rightmerge1 += (1);
+						fi;
+					else
+						if i81.0 (countmerge1 == 6) then
+							if i82.0 (topleft1 < topright1) then
+								p1par5 = (topleft1);
+								leftmerge1 += (1);
+							else
+								p1par5 = (topright1);
+								rightmerge1 += (1);
+							fi;
+						else
+							if i83.0 (countmerge1 == 5) then
+								if i84.0 (topleft1 < topright1) then
+									p1par6 = (topleft1);
+									leftmerge1 += (1);
+								else
+									p1par6 = (topright1);
+									rightmerge1 += (1);
+								fi;
+							else
+								if i85.0 (countmerge1 == 4) then
+									if i86.0 (topleft1 < topright1) then
+										p1par7 = (topleft1);
+										leftmerge1 += (1);
+									else
+										p1par7 = (topright1);
+										rightmerge1 += (1);
+									fi;
+								else
+									if i87.0 (countmerge1 == 3) then
+										if i88.0 (topleft1 < topright1) then
+											p1par8 = (topleft1);
+											leftmerge1 += (1);
+										else
+											p1par8 = (topright1);
+											rightmerge1 += (1);
+										fi;
+									else
+										if i89.0 (countmerge1 == 2) then
+											if i90.0 (topleft1 < topright1) then
+												p1par9 = (topleft1);
+												leftmerge1 += (1);
+											else
+												p1par9 = (topright1);
+												rightmerge1 += (1);
+											fi;
+										else
+											if i91.0 (countmerge1 == 1) then
+												if i92.0 (topleft1 < topright1) then
+													p1par10 = (topleft1);
+													leftmerge1 += (1);
+												else
+													p1par10 = (topright1);
+													rightmerge1 += (1);
+												fi;
+											else
+												X += (3);
+											fi;												
+										fi;											
+									fi;										
+								fi;									
+							fi;								
+						fi;							
+					fi;					
+				fi;				
+			fi;
+			
+		fi;
+		countmerge1 -= (1);
+	elihw;
+
+}
+
+//Finally, merge the two sorted lists of 10 elements each	
+	
+countmerge3 = (20);
+leftmerge3 = (0);
+rightmerge3 = (0);
+topleft3 = (0);
+topright3 = (0);
+	
+while w15.0 (countmerge3 > 0) do
+
+	if i91.0 (leftmerge3 == 0) then
+		topleft3 = (p1par1);
+	else
+		if i92.0 (leftmerge3 == 1) then
+			topleft3 = (p1par2);
+		else
+			if i93.0 (leftmerge3 == 2) then
+				topleft3 = (p1par3);
+			else
+				if i94.0 (leftmerge3 == 3) then
+					topleft3 = (p1par4);
+				else
+					if i95.0 (leftmerge3 == 4) then
+						topleft3 = (p1par5);
+					else
+						if i96.0 (leftmerge3 == 5) then
+							topleft3 = (p1par6);
+						else
+							if i97.0 (leftmerge3 == 6) then
+								topleft3 = (p1par7);
+							else
+								if i98.0 (leftmerge3 == 7) then
+									topleft3 = (p1par8);
+								else
+									if i99.0 (leftmerge3 == 8) then
+										topleft3 = (p1par9);
+									else
+										if i100.0 (leftmerge3 == 9) then
+											topleft3 = (p1par10);
+										else
+											topleft3 = (1000);
+										fi;
+									fi;
+								fi;
+							fi;
+						fi;
+					fi;
+				fi;
+			fi;
+		fi;
+	fi;
+
+	if i101.0 (rightmerge3 == 0) then
+		topright3 = (p2par1);
+	else
+		if i102.0 (rightmerge3 == 1) then
+			topright3 = (p2par2);
+		else
+			if i103.0 (rightmerge3 == 2) then
+				topright3 = (p2par3);
+			else
+				if i104.0 (rightmerge3 == 3) then
+					topright3 = (p2par4);
+				else
+					if i105.0 (rightmerge3 == 4) then
+						topright3 = (p2par5);
+					else
+						if i106.0 (rightmerge3 == 5) then
+							topright3 = (p2par6);
+						else
+							if i107.0 (rightmerge3 == 6) then
+								topright3 = (p2par7);
+							else
+								if i108.0 (rightmerge3 == 7) then
+									topright3 = (p2par8);
+								else
+									if i109.0 (rightmerge3 == 8) then
+										topright3 = (p2par9);
+									else
+										if i110.0 (rightmerge3 == 9) then
+											topright3 = (p2par10);
+										else
+											topright3 = (1000);
+										fi;
+									fi;
+								fi;
+							fi;
+						fi;
+					fi;
+				fi;
+			fi;
+		fi;
+	fi;
+
+	if i111.0 (countmerge3 == 20) then
+		if i112.0 (topleft3 < topright3) {
+			l1 = (topleft3);
+			leftmerge3 += (1);
+		else
+			l1 = (topright3);
+			rightmerge3 += (1);
+		fi;
+	else
+		if i113.0 (countmerge3 == 19) then
+			if i114.0 (topleft3 < topright3) {
+				l2 = (topleft3);
+				leftmerge3 += (1);
+			else
+				l2 = (topright3);
+				rightmerge3 += (1);
+			fi;
+		else
+			if i115.0 (countmerge3 == 18) then
+				if i116.0 (topleft3 < topright3) {
+					l3 = (topleft3);
+					leftmerge3 += (1);
+				else
+					l3 = (topright3);
+					rightmerge3 += (1);
+				fi;
+			else
+				if i117.0 (countmerge3 == 17) then
+					if i118.0 (topleft3 < topright3) {
+						l4 = (topleft3);
+						leftmerge3 += (1);
+					else
+						l4 = (topright3);
+						rightmerge3 += (1);
+					fi;
+				else
+					if i119.0 (countmerge3 == 16) then
+						if i120.0 (topleft3 < topright3) {
+							l5 = (topleft3);
+							leftmerge3 += (1);
+						else
+							l5 = (topright3);
+							rightmerge3 += (1);
+						fi;
+					else
+						if i121.0 (countmerge3 == 15) then
+							if i122.0 (topleft3 < topright3) {
+								l6 = (topleft3);
+								leftmerge3 += (1);
+							else
+								l6 = (topright3);
+								rightmerge3 += (1);
+							fi;
+						else
+							if i123.0 (countmerge3 == 14) then
+								if i124.0 (topleft3 < topright3) {
+									l7 = (topleft3);
+									leftmerge3 += (1);
+								else
+									l7 = (topright3);
+									rightmerge3 += (1);
+								fi;
+							else
+								if i125.0 (countmerge3 == 13) then
+									if i126.0 (topleft3 < topright3) {
+										l8 = (topleft3);
+										leftmerge3 += (1);
+									else
+										l8 = (topright3);
+										rightmerge3 += (1);
+									fi;
+								else
+									if i127.0 (countmerge3 == 12) then
+										if i128.0 (topleft3 < topright3) {
+											l9 = (topleft3);
+											leftmerge3 += (1);
+										else
+											l9 = (topright3);
+											rightmerge3 += (1);
+										fi;
+									else
+										if i129.0 (countmerge3 == 11) then
+											if i130.0 (topleft3 < topright3) {
+												l10 = (topleft3);
+												leftmerge3 += (1);
+											else
+												l10 = (topright3);
+												rightmerge3 += (1);
+											fi;
+										else
+											if i131.0 (countmerge3 == 10) then
+												if i132.0 (topleft3 < topright3) {
+													l11 = (topleft3);
+													leftmerge3 += (1);
+												else
+													l11 = (topright3);
+													rightmerge3 += (1);
+												fi;
+											else
+												if i133.0 (countmerge3 == 9) then
+													if i134.0 (topleft3 < topright3) {
+														l12 = (topleft3);
+														leftmerge3 += (1);
+													else
+														l12 = (topright3);
+														rightmerge3 += (1);
+													fi;
+												else
+													if i135.0 (countmerge3 == 8) then
+														if i136.0 (topleft3 < topright3) {
+															l13 = (topleft3);
+															leftmerge3 += (1);
+														else
+															l13 = (topright3);
+															rightmerge3 += (1);
+														fi;
+													else
+														if i137.0 (countmerge3 == 7) then
+															if i138.0 (topleft3 < topright3) {
+																l14 = (topleft3);
+																leftmerge3 += (1);
+															else
+																l14 = (topright3);
+																rightmerge3 += (1);
+															fi;
+														else
+															if i139.0 (countmerge3 == 6) then
+																if i140.0 (topleft3 < topright3) {
+																	l15 = (topleft3);
+																	leftmerge3 += (1);
+																else
+																	l15 = (topright3);
+																	rightmerge3 += (1);
+																fi;
+															else
+																if i141.0 (countmerge3 == 5) then
+																	if i142.0 (topleft3 < topright3) {
+																		l16 = (topleft3);
+																		leftmerge3 += (1);
+																	else
+																		l16 = (topright3);
+																		rightmerge3 += (1);
+																	fi;
+																else
+																	if i143.0 (countmerge3 == 4) then
+																		if i144.0 (topleft3 < topright3) {
+																			l17 = (topleft3);
+																			leftmerge3 += (1);
+																		else
+																			l17 = (topright3);
+																			rightmerge3 += (1);
+																		fi;
+																	else
+																		if i145.0 (countmerge3 == 3) then
+																			if i146.0 (topleft3 < topright3) {
+																				l18 = (topleft3);
+																				leftmerge3 += (1);
+																			else
+																				l18 = (topright3);
+																				rightmerge3 += (1);
+																			fi;
+																		else
+																			if i147.0 (countmerge3 == 2) then
+																				if i148.0 (topleft3 < topright3) {
+																					l19 = (topleft3);
+																					leftmerge3 += (1);
+																				else
+																					l19 = (topright3);
+																					rightmerge3 += (1);
+																				fi;
+																			else
+																				if i149.0 (countmerge3 == 1) then
+																					if i150.0 (topleft3 < topright3) {
+																						l20 = (topleft3);
+																						leftmerge3 += (1);
+																					else
+																						l20 = (topright3);
+																						rightmerge3 += (1);
+																					fi;
+																				else
+																					X += (3);
+																				fi;																						
+																			fi;																						
+																		fi;																					
+																	fi;																				
+																fi;																			
+															fi;																		
+														fi;																	
+													fi;																
+												fi;															
+											fi;													
+										fi;													
+									fi;										
+								fi;											
+							fi;									
+						fi;				
+					fi;		
+				fi;		
+			fi;	
+		fi;
+	fi;
+	
+	countmerge3 -= (1);
+
+elihw;

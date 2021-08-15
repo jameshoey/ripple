@@ -1,0 +1,22 @@
+//this is an example showing the concurrency bug 'atomicity violation'
+
+Y = (13);
+
+begin b1.0
+
+	var X = 10;
+	var buffer = 0;
+	
+	//procedure to mimic a slow write - where the value of Y is first written into buffer, before being written to local X
+	proc p1.0 slowWrite is
+		buffer = (Y);
+		X = (buffer);
+	corp;
+	
+	par {
+		result = (X);
+	}
+	{
+		call c1.0 slowWrite;
+	}
+end

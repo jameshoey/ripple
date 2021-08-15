@@ -1,0 +1,283 @@
+[ while w0.0 (countu1 > 1) ]                                                                        ---> while w0.0 (countu1 > 1)
+[ countu1 += 1 (lam) ]                                                                              ---> countu1 += 1 (lam)
+[ countu1 += 1 (lam) ]                                                                              ---> countu1 += 1 (lam)
+[ skip $countu1 += 1 (lam)$ ]                                                                       ---> skip $countu1 += 1 (lam)$
+[ countu2 = 5 (lam) ]                                                                               ---> countu2 = 5 (lam)
+[ skip $countu2 = 5 (lam)$ ]                                                                        ---> skip $countu2 = 5 (lam)$
+[ while w1.4 (countu2 > 1) ]                                                                        ---> while w1.4 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.20 ]                                                                                        ---> if i0.20
+[ if i2.20 ]                                                                                        ---> if i2.20
+[ if i4.20 ]                                                                                        ---> if i4.20
+[ if i6.20 ]                                                                                        ---> if i6.20
+[ if i7.20 ]                                                                                        ---> if i7.20
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ if i7.20 (close) ]                                                                                ---> if i7.20 (close)
+[ if i6.20 (close) ]                                                                                ---> if i6.20 (close)
+[ if i4.20 (close) ]                                                                                ---> if i4.20 (close)
+[ if i2.20 (close) ]                                                                                ---> if i2.20 (close)
+[ if i0.20 (close) ]                                                                                ---> if i0.20 (close)
+[ while w1.4 (countu2 > 1) ]                                                                        ---> while w1.4 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.19 ]                                                                                        ---> if i0.19
+[ if i2.19 ]                                                                                        ---> if i2.19
+[ if i4.19 ]                                                                                        ---> if i4.19
+[ if i5.19 ]                                                                                        ---> if i5.19
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ if i5.19 (close) ]                                                                                ---> if i5.19 (close)
+[ if i4.19 (close) ]                                                                                ---> if i4.19 (close)
+[ if i2.19 (close) ]                                                                                ---> if i2.19 (close)
+[ if i0.19 (close) ]                                                                                ---> if i0.19 (close)
+[ while w1.4 (countu2 > 1) ]                                                                        ---> while w1.4 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.18 ]                                                                                        ---> if i0.18
+[ if i2.18 ]                                                                                        ---> if i2.18
+[ if i3.18 ]                                                                                        ---> if i3.18
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ if i3.18 (close) ]                                                                                ---> if i3.18 (close)
+[ if i2.18 (close) ]                                                                                ---> if i2.18 (close)
+[ if i0.18 (close) ]                                                                                ---> if i0.18 (close)
+[ while w1.4 (countu2 > 1) ]                                                                        ---> while w1.4 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.17 ]                                                                                        ---> if i0.17
+[ if i1.17 ]                                                                                        ---> if i1.17
+[ l1 = tempu (lam) ]                                                                                ---> l1 = tempu (lam)
+[ skip $l1 = tempu (lam)$ ]                                                                         ---> skip $l1 = tempu (lam)$
+[ l2 = l1 (lam) ]                                                                                   ---> l2 = l1 (lam)
+[ skip $l2 = l1 (lam)$ ]                                                                            ---> skip $l2 = l1 (lam)$
+[ tempu = l2 (lam) ]                                                                                ---> tempu = l2 (lam)
+[ if i1.17 (close) ]                                                                                ---> if i1.17 (close)
+[ if i0.17 (close) ]                                                                                ---> if i0.17 (close)
+[ while w1.4 (countu2 > 1) ]                                                                        ---> while w1.4 (countu2 > 1)
+[ while w0.0 (countu1 > 1) ]                                                                        ---> while w0.0 (countu1 > 1)
+[ countu1 += 1 (lam) ]                                                                              ---> countu1 += 1 (lam)
+[ countu1 += 1 (lam) ]                                                                              ---> countu1 += 1 (lam)
+[ skip $countu1 += 1 (lam)$ ]                                                                       ---> skip $countu1 += 1 (lam)$
+[ countu2 = 5 (lam) ]                                                                               ---> countu2 = 5 (lam)
+[ skip $countu2 = 5 (lam)$ ]                                                                        ---> skip $countu2 = 5 (lam)$
+[ while w1.3 (countu2 > 1) ]                                                                        ---> while w1.3 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.15 ]                                                                                        ---> if i0.15
+[ if i2.15 ]                                                                                        ---> if i2.15
+[ if i4.15 ]                                                                                        ---> if i4.15
+[ if i6.15 ]                                                                                        ---> if i6.15
+[ if i7.15 ]                                                                                        ---> if i7.15
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ if i7.15 (close) ]                                                                                ---> if i7.15 (close)
+[ if i6.15 (close) ]                                                                                ---> if i6.15 (close)
+[ if i4.15 (close) ]                                                                                ---> if i4.15 (close)
+[ if i2.15 (close) ]                                                                                ---> if i2.15 (close)
+[ if i0.15 (close) ]                                                                                ---> if i0.15 (close)
+[ while w1.3 (countu2 > 1) ]                                                                        ---> while w1.3 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.14 ]                                                                                        ---> if i0.14
+[ if i2.14 ]                                                                                        ---> if i2.14
+[ if i4.14 ]                                                                                        ---> if i4.14
+[ if i5.14 ]                                                                                        ---> if i5.14
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ if i5.14 (close) ]                                                                                ---> if i5.14 (close)
+[ if i4.14 (close) ]                                                                                ---> if i4.14 (close)
+[ if i2.14 (close) ]                                                                                ---> if i2.14 (close)
+[ if i0.14 (close) ]                                                                                ---> if i0.14 (close)
+[ while w1.3 (countu2 > 1) ]                                                                        ---> while w1.3 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.13 ]                                                                                        ---> if i0.13
+[ if i2.13 ]                                                                                        ---> if i2.13
+[ if i3.13 ]                                                                                        ---> if i3.13
+[ l2 = tempu (lam) ]                                                                                ---> l2 = tempu (lam)
+[ skip $l2 = tempu (lam)$ ]                                                                         ---> skip $l2 = tempu (lam)$
+[ l3 = l2 (lam) ]                                                                                   ---> l3 = l2 (lam)
+[ skip $l3 = l2 (lam)$ ]                                                                            ---> skip $l3 = l2 (lam)$
+[ tempu = l3 (lam) ]                                                                                ---> tempu = l3 (lam)
+[ if i3.13 (close) ]                                                                                ---> if i3.13 (close)
+[ if i2.13 (close) ]                                                                                ---> if i2.13 (close)
+[ if i0.13 (close) ]                                                                                ---> if i0.13 (close)
+[ while w1.3 (countu2 > 1) ]                                                                        ---> while w1.3 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.12 ]                                                                                        ---> if i0.12
+[ if i1.12 ]                                                                                        ---> if i1.12
+[ l1 = tempu (lam) ]                                                                                ---> l1 = tempu (lam)
+[ skip $l1 = tempu (lam)$ ]                                                                         ---> skip $l1 = tempu (lam)$
+[ l2 = l1 (lam) ]                                                                                   ---> l2 = l1 (lam)
+[ skip $l2 = l1 (lam)$ ]                                                                            ---> skip $l2 = l1 (lam)$
+[ tempu = l2 (lam) ]                                                                                ---> tempu = l2 (lam)
+[ if i1.12 (close) ]                                                                                ---> if i1.12 (close)
+[ if i0.12 (close) ]                                                                                ---> if i0.12 (close)
+[ while w1.3 (countu2 > 1) ]                                                                        ---> while w1.3 (countu2 > 1)
+[ while w0.0 (countu1 > 1) ]                                                                        ---> while w0.0 (countu1 > 1)
+[ countu1 += 1 (lam) ]                                                                              ---> countu1 += 1 (lam)
+[ countu1 += 1 (lam) ]                                                                              ---> countu1 += 1 (lam)
+[ skip $countu1 += 1 (lam)$ ]                                                                       ---> skip $countu1 += 1 (lam)$
+[ countu2 = 5 (lam) ]                                                                               ---> countu2 = 5 (lam)
+[ skip $countu2 = 5 (lam)$ ]                                                                        ---> skip $countu2 = 5 (lam)$
+[ while w1.2 (countu2 > 1) ]                                                                        ---> while w1.2 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.10 ]                                                                                        ---> if i0.10
+[ if i2.10 ]                                                                                        ---> if i2.10
+[ if i4.10 ]                                                                                        ---> if i4.10
+[ if i6.10 ]                                                                                        ---> if i6.10
+[ if i7.10 ]                                                                                        ---> if i7.10
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ X -= 3 (lam) ]                                                                                    ---> X -= 3 (lam)
+[ if i7.10 (close) ]                                                                                ---> if i7.10 (close)
+[ if i6.10 (close) ]                                                                                ---> if i6.10 (close)
+[ if i4.10 (close) ]                                                                                ---> if i4.10 (close)
+[ if i2.10 (close) ]                                                                                ---> if i2.10 (close)
+[ if i0.10 (close) ]                                                                                ---> if i0.10 (close)
+[ while w1.2 (countu2 > 1) ]                                                                        ---> while w1.2 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.9 ]                                                                                         ---> if i0.9
+[ if i2.9 ]                                                                                         ---> if i2.9
+[ if i4.9 ]                                                                                         ---> if i4.9
+[ if i5.9 ]                                                                                         ---> if i5.9
+[ l3 = tempu (lam) ]                                                                                ---> l3 = tempu (lam)
+[ skip $l3 = tempu (lam)$ ]                                                                         ---> skip $l3 = tempu (lam)$
+[ l4 = l3 (lam) ]                                                                                   ---> l4 = l3 (lam)
+[ skip $l4 = l3 (lam)$ ]                                                                            ---> skip $l4 = l3 (lam)$
+[ tempu = l4 (lam) ]                                                                                ---> tempu = l4 (lam)
+[ if i5.9 (close) ]                                                                                 ---> if i5.9 (close)
+[ if i4.9 (close) ]                                                                                 ---> if i4.9 (close)
+[ if i2.9 (close) ]                                                                                 ---> if i2.9 (close)
+[ if i0.9 (close) ]                                                                                 ---> if i0.9 (close)
+[ while w1.2 (countu2 > 1) ]                                                                        ---> while w1.2 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.8 ]                                                                                         ---> if i0.8
+[ if i2.8 ]                                                                                         ---> if i2.8
+[ if i3.8 ]                                                                                         ---> if i3.8
+[ l2 = tempu (lam) ]                                                                                ---> l2 = tempu (lam)
+[ skip $l2 = tempu (lam)$ ]                                                                         ---> skip $l2 = tempu (lam)$
+[ l3 = l2 (lam) ]                                                                                   ---> l3 = l2 (lam)
+[ skip $l3 = l2 (lam)$ ]                                                                            ---> skip $l3 = l2 (lam)$
+[ tempu = l3 (lam) ]                                                                                ---> tempu = l3 (lam)
+[ if i3.8 (close) ]                                                                                 ---> if i3.8 (close)
+[ if i2.8 (close) ]                                                                                 ---> if i2.8 (close)
+[ if i0.8 (close) ]                                                                                 ---> if i0.8 (close)
+[ while w1.2 (countu2 > 1) ]                                                                        ---> while w1.2 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.7 ]                                                                                         ---> if i0.7
+[ if i1.7 ]                                                                                         ---> if i1.7
+[ l1 = tempu (lam) ]                                                                                ---> l1 = tempu (lam)
+[ skip $l1 = tempu (lam)$ ]                                                                         ---> skip $l1 = tempu (lam)$
+[ l2 = l1 (lam) ]                                                                                   ---> l2 = l1 (lam)
+[ skip $l2 = l1 (lam)$ ]                                                                            ---> skip $l2 = l1 (lam)$
+[ tempu = l2 (lam) ]                                                                                ---> tempu = l2 (lam)
+[ if i1.7 (close) ]                                                                                 ---> if i1.7 (close)
+[ if i0.7 (close) ]                                                                                 ---> if i0.7 (close)
+[ while w1.2 (countu2 > 1) ]                                                                        ---> while w1.2 (countu2 > 1)
+[ while w0.0 (countu1 > 1) ]                                                                        ---> while w0.0 (countu1 > 1)
+[ countu1 += 1 (lam) ]                                                                              ---> countu1 += 1 (lam)
+[ countu1 += 1 (lam) ]                                                                              ---> countu1 += 1 (lam)
+[ skip $countu1 += 1 (lam)$ ]                                                                       ---> skip $countu1 += 1 (lam)$
+[ countu2 = 5 (lam) ]                                                                               ---> countu2 = 5 (lam)
+[ skip $countu2 = 5 (lam)$ ]                                                                        ---> skip $countu2 = 5 (lam)$
+[ while w1.1 (countu2 > 1) ]                                                                        ---> while w1.1 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.5 ]                                                                                         ---> if i0.5
+[ if i2.5 ]                                                                                         ---> if i2.5
+[ if i4.5 ]                                                                                         ---> if i4.5
+[ if i6.5 ]                                                                                         ---> if i6.5
+[ if i7.5 ]                                                                                         ---> if i7.5
+[ l4 = tempu (lam) ]                                                                                ---> l4 = tempu (lam)
+[ skip $l4 = tempu (lam)$ ]                                                                         ---> skip $l4 = tempu (lam)$
+[ l5 = l4 (lam) ]                                                                                   ---> l5 = l4 (lam)
+[ skip $l5 = l4 (lam)$ ]                                                                            ---> skip $l5 = l4 (lam)$
+[ tempu = l5 (lam) ]                                                                                ---> tempu = l5 (lam)
+[ if i7.5 (close) ]                                                                                 ---> if i7.5 (close)
+[ if i6.5 (close) ]                                                                                 ---> if i6.5 (close)
+[ if i4.5 (close) ]                                                                                 ---> if i4.5 (close)
+[ if i2.5 (close) ]                                                                                 ---> if i2.5 (close)
+[ if i0.5 (close) ]                                                                                 ---> if i0.5 (close)
+[ while w1.1 (countu2 > 1) ]                                                                        ---> while w1.1 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.4 ]                                                                                         ---> if i0.4
+[ if i2.4 ]                                                                                         ---> if i2.4
+[ if i4.4 ]                                                                                         ---> if i4.4
+[ if i5.4 ]                                                                                         ---> if i5.4
+[ l3 = tempu (lam) ]                                                                                ---> l3 = tempu (lam)
+[ skip $l3 = tempu (lam)$ ]                                                                         ---> skip $l3 = tempu (lam)$
+[ l4 = l3 (lam) ]                                                                                   ---> l4 = l3 (lam)
+[ skip $l4 = l3 (lam)$ ]                                                                            ---> skip $l4 = l3 (lam)$
+[ tempu = l4 (lam) ]                                                                                ---> tempu = l4 (lam)
+[ if i5.4 (close) ]                                                                                 ---> if i5.4 (close)
+[ if i4.4 (close) ]                                                                                 ---> if i4.4 (close)
+[ if i2.4 (close) ]                                                                                 ---> if i2.4 (close)
+[ if i0.4 (close) ]                                                                                 ---> if i0.4 (close)
+[ while w1.1 (countu2 > 1) ]                                                                        ---> while w1.1 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.3 ]                                                                                         ---> if i0.3
+[ if i2.3 ]                                                                                         ---> if i2.3
+[ if i3.3 ]                                                                                         ---> if i3.3
+[ l2 = tempu (lam) ]                                                                                ---> l2 = tempu (lam)
+[ skip $l2 = tempu (lam)$ ]                                                                         ---> skip $l2 = tempu (lam)$
+[ l3 = l2 (lam) ]                                                                                   ---> l3 = l2 (lam)
+[ skip $l3 = l2 (lam)$ ]                                                                            ---> skip $l3 = l2 (lam)$
+[ tempu = l3 (lam) ]                                                                                ---> tempu = l3 (lam)
+[ if i3.3 (close) ]                                                                                 ---> if i3.3 (close)
+[ if i2.3 (close) ]                                                                                 ---> if i2.3 (close)
+[ if i0.3 (close) ]                                                                                 ---> if i0.3 (close)
+[ while w1.1 (countu2 > 1) ]                                                                        ---> while w1.1 (countu2 > 1)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ countu2 += 1 (lam) ]                                                                              ---> countu2 += 1 (lam)
+[ skip $countu2 += 1 (lam)$ ]                                                                       ---> skip $countu2 += 1 (lam)$
+[ if i0.2 ]                                                                                         ---> if i0.2
+[ if i1.2 ]                                                                                         ---> if i1.2
+[ l1 = tempu (lam) ]                                                                                ---> l1 = tempu (lam)
+[ skip $l1 = tempu (lam)$ ]                                                                         ---> skip $l1 = tempu (lam)$
+[ l2 = l1 (lam) ]                                                                                   ---> l2 = l1 (lam)
+[ skip $l2 = l1 (lam)$ ]                                                                            ---> skip $l2 = l1 (lam)$
+[ tempu = l2 (lam) ]                                                                                ---> tempu = l2 (lam)
+[ if i1.2 (close) ]                                                                                 ---> if i1.2 (close)
+[ if i0.2 (close) ]                                                                                 ---> if i0.2 (close)
+[ while w1.1 (countu2 > 1) ]                                                                        ---> while w1.1 (countu2 > 1)
+[ while w0.0 (countu1 > 1) ]                                                                        ---> while w0.0 (countu1 > 1)
+[ skip $while w0.0 (countu1 > 1)$ ]                                                                 ---> skip $while w0.0 (countu1 > 1)$
+[ tempu = 0 (lam) ]                                                                                 ---> tempu = 0 (lam)
+[ skip $tempu = 0 (lam)$ ]                                                                          ---> skip $tempu = 0 (lam)$
+[ countu2 = 5 (lam) ]                                                                               ---> countu2 = 5 (lam)
+[ skip $countu2 = 5 (lam)$ ]                                                                        ---> skip $countu2 = 5 (lam)$
+[ countu1 = 5 (lam) ]                                                                               ---> countu1 = 5 (lam)
+[ skip $countu1 = 5 (lam)$ ]                                                                        ---> skip $countu1 = 5 (lam)$
+[ l5 = 1 (lam) ]                                                                                    ---> l5 = 1 (lam)
+[ skip $l5 = 1 (lam)$ ]                                                                             ---> skip $l5 = 1 (lam)$
+[ l4 = 4 (lam) ]                                                                                    ---> l4 = 4 (lam)
+[ skip $l4 = 4 (lam)$ ]                                                                             ---> skip $l4 = 4 (lam)$
+[ l3 = 5 (lam) ]                                                                                    ---> l3 = 5 (lam)
+[ skip $l3 = 5 (lam)$ ]                                                                             ---> skip $l3 = 5 (lam)$
+[ l2 = 14 (lam) ]                                                                                   ---> l2 = 14 (lam)
+[ skip $l2 = 14 (lam)$ ]                                                                            ---> skip $l2 = 14 (lam)$
+[ l1 = 19 (lam) ]                                                                                   ---> l1 = 19 (lam)

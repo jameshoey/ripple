@@ -1,0 +1,10 @@
+par {
+while (X < 3) do
+X = X + 1;
+elihw;
+}
+{
+Y = 20;
+Z = Z + Y;
+Y = 12;
+}

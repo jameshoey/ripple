@@ -1,0 +1,33 @@
+start = 23;
+output = -1;
+
+begin
+
+	var initial = -1;
+	var result = -1;
+
+	proc odd is
+		if (initial == 0) then
+			result = 0;
+		else
+			initial = initial - 1;
+			call even;
+		fi;
+	corp;
+	
+	proc even is
+		if (initial == 0) then
+			result = 1;
+		else
+			initial = initial - 1;
+			call odd;
+		fi;
+	corp;
+	
+	initial = start;
+	call even;
+	output = result;
+	
+end;
+
+

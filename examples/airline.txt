@@ -1,0 +1,61 @@
+//airline example
+
+numOfSeats = (250);
+
+begin b1.0
+	var agent1Open = 1;
+	var agent2Open = 1;
+	var agent3Open = 1;
+	var agent4Open = 1;
+
+	proc p1.0 sellTicket is
+		numOfSeats = (numOfSeats - 1);
+	corp;
+
+	par {
+		
+		par {
+		
+			while w1.0 (agent1Open == 1) do
+				if i1.0 (numOfSeats > 0) then
+					call c1.0 sellTicket;
+				else
+					agent1Open = (0);
+				fi;
+			elihw;
+		}
+		{
+			while w3.0 (agent3Open == 1) do
+				if i3.0 (numOfSeats > 0) then
+					call c3.0 sellTicket;
+				else
+					agent3Open = (0);
+				fi;
+			elihw;
+		
+		}
+	}
+	{
+		par {
+		
+			while w2.0 (agent2Open == 1) do
+				if i2.0 (numOfSeats > 0) then
+					call c2.0 sellTicket;
+				else
+					agent2Open = (0);
+				fi;
+			elihw;
+		}
+		{
+			while w4.0 (agent4Open == 1) do
+				if i4.0 (numOfSeats > 0) then
+					call c4.0 sellTicket;
+				else
+					agent4Open = (0);
+				fi;
+			elihw;
+		
+		}
+
+	}
+end

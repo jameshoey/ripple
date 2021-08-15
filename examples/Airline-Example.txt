@@ -1,0 +1,32 @@
+//airline example
+
+numOfSeats = 3;  //number of initially free seats
+
+begin
+	var agent1Open = 1;
+	var agent2Open = 1;
+
+	proc sellTicket is
+		numOfSeats = numOfSeats - 1;
+	corp;
+
+	par {
+		while (agent1Open == 1) do            //loop while the agent is open
+			if (numOfSeats > 0) then      //check if at least one seat is free
+				call sellTicket;
+			else
+				agent1Open = 0;            //close the agent
+			fi;
+		elihw;
+	}
+	{
+		while (agent2Open == 1) do            //loop while the agent is open 
+			if (numOfSeats > 0) then      //check if at least one seat is free
+				call sellTicket;
+			else
+				agent2Open = 0;            //close the agent
+			fi;
+		elihw;
+
+	}
+end 

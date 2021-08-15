@@ -1,0 +1,37 @@
+limit = 5;
+
+begin
+	var startEven = 0;
+	var startOdd = 1;
+	
+	var numEven = 5;
+	var numOdd = 5;
+	
+	var sumEven = 0;
+	var sumOdd = 0;
+	
+	while (numEven > 0) do
+		if (startEven == 1) then
+			sumEven += numEven;
+			startEven = 0;
+		else
+			startEven = 1;
+		fi;
+		numEven = numEven - 1;
+	elihw;
+	
+	while (numOdd > 0) do
+		if (startOdd == 1) then
+			sumOdd += numOdd;
+			startOdd = 0;
+		else
+			startOdd = 1;
+		fi;
+		numOdd = numOdd - 1;
+	elihw;
+	
+	even = sumEven;
+	odd = sumOdd;
+	
+end;
+

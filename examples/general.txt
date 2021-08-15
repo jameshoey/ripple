@@ -1,0 +1,39 @@
+begin b1.0
+
+	var left = 1;
+	var right = 1;
+
+	proc p1.0 fun is
+		begin b2.0
+			var loop = 10;
+			var other = 0;
+			if i1.0 (loop < 5) then
+				call c1.0 fun;	
+			else
+				other = (other + 1);
+			fi;
+			loop = (loop - 1);
+		end
+	corp;	
+
+	par {
+
+		while w2.0 (left > 0) do
+			left = (left - 1);
+			call c2.0 fun;
+		elihw;
+
+
+	}
+	{
+
+		while w3.0 (right > 0) do
+			right = (right - 1);
+			call c3.0 fun;
+		elihw;
+
+
+
+	}
+
+end

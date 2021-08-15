@@ -1,0 +1,205 @@
+startingNumberss = 5;
+minTemp = 0;
+switchTemp = 0;
+
+orig1 = 1;
+orig2 = 10;
+orig3 = 8;
+orig4 = 7;
+orig5 = 2;
+
+final1 = 0;
+final2 = 0;
+final3 = 0;
+final4 = 0;
+final5 = 0;
+
+begin 
+	var oss1 = 1;
+	var oss2 = 10;
+	var oss3 = 8;
+	var oss4 = 7;
+	var oss5 = 2;
+	
+	proc selectionSort is
+		while (startingNumberss > 0) do
+		
+			if (startingNumberss == 5) then
+			
+				minTemp = oss1;
+				if (oss2 < minTemp) then
+					minTemp = oss2;
+				else
+					Y += 1;
+				fi;
+				if (oss3 < minTemp) then
+					minTemp = oss3;
+				else
+					Y += 1;
+				fi;
+				if (oss4 < minTemp) then
+					minTemp = oss4;
+				else
+					Y += 1;
+				fi;
+				if (oss5 < minTemp) then
+					minTemp = oss5;
+				else
+					Y += 1;
+				fi;
+			
+				if (minTemp != oss1) then
+					
+					if (minTemp == oss2) then
+						switchTemp = oss1;
+						oss1 = oss2;
+						oss2 = switchTemp;
+					else
+						if (minTemp == oss3) then
+							switchTemp = oss1;
+							oss1 = oss3;
+							oss3 = switchTemp;					
+						else
+							if (minTemp == oss4) then
+								switchTemp = oss1;
+								oss1 = oss4;
+								oss4 = switchTemp;	
+							else
+								if (minTemp == oss5) then
+									switchTemp = oss1;
+									oss1 = oss5;
+									oss5 = switchTemp;	
+								else
+									Y += 1;
+								fi;
+							fi;	
+						fi;				
+					fi;				
+				else
+					Y += 1;
+				fi;
+
+			else
+				if (startingNumberss == 4) then
+	
+					minTemp = oss2;
+					if (oss3 < minTemp) then
+						minTemp = oss3;
+					else
+						Y += 1;
+					fi;
+					if (oss4 < minTemp) then
+						minTemp = oss4;
+					else
+						Y += 1;
+					fi;
+					if (oss5 < minTemp) then
+						minTemp = oss5;
+					else
+						Y += 1;
+					fi;
+				
+					if (minTemp != oss2) then
+						
+						if (minTemp == oss3) then
+							switchTemp = oss2;
+							oss2 = oss3;
+							oss3 = switchTemp;					
+						else
+							if (minTemp == oss4) then
+								switchTemp = oss2;
+								oss2 = oss4;
+								oss4 = switchTemp;	
+							else
+								if (minTemp == oss5) then
+									switchTemp = oss2;
+									oss2 = oss5;
+									oss5 = switchTemp;	
+								else
+									Y += 1;
+								fi;
+							fi;	
+						fi;							
+					else
+						Y += 1;
+					fi;
+
+				
+				else
+					if (startingNumberss == 3) then
+
+						minTemp = oss3;
+						if (oss4 < minTemp) then
+							minTemp = oss4;
+						else
+							Y += 1;
+						fi;
+						if (oss5 < minTemp) then
+							minTemp = oss5;
+						else
+							Y += 1;
+						fi;
+			
+						if (minTemp != oss3) then
+							
+							
+							if (minTemp == oss4) then
+								switchTemp = oss3;
+								oss3 = oss4;
+								oss4 = switchTemp;	
+							else
+								if (minTemp == oss5) then
+									switchTemp = oss3;
+									oss3 = oss5;
+									oss5 = switchTemp;	
+								else
+									Y += 1;
+								fi;
+							fi;	
+											
+									
+						else
+							Y += 1;
+						fi;
+					
+
+					else
+						if (startingNumberss == 2) then
+							minTemp = oss4;
+							if (oss5 < minTemp) then
+								minTemp = oss5;
+							else
+								Y += 1;
+							fi;
+							
+							if (minTemp != oss4) then
+								switchTemp = oss5;
+								oss5 = oss4;
+								oss4 = switchTemp;
+							else
+								Y += 1;
+							fi;
+						else
+							Y += 1;
+						fi;
+						
+					fi;
+					
+				fi;
+			fi;
+		
+			startingNumberss = startingNumberss - 1;
+		elihw;
+	corp;
+
+	call selectionSort;
+	
+	final1 = oss1;
+	final2 = oss2;
+	final3 = oss3;
+	final4 = oss4;
+	final5 = oss5;	
+	
+	
+end
+

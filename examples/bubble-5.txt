@@ -1,0 +1,65 @@
+l1 = 19;
+l2 = 14;
+l3 = 5;
+l4 = 4;
+l5 = 1;
+
+
+countu1 = 5;
+countu2 = 5;
+tempu = 0;
+
+while (countu1 > 1) do		
+	while (countu2 > 1) do		
+		if (countu2 == 5) then			
+			if (l1 > l2) then
+					tempu = l2;
+					l2 = l1;
+					l1 = tempu;
+			else
+				X += 3;
+			fi;				
+					
+		else					
+			if (countu2 == 4) then	
+
+				if (l2 > l3) then
+						tempu = l3;
+						l3 = l2;
+						l2 = tempu;
+				else
+					X += 3;
+				fi;				
+					
+			else					
+				if (countu2 == 3) then	
+					if (l3 > l4) then
+							tempu = l4;
+							l4 = l3;
+							l3 = tempu;
+					else
+						X += 3;
+					fi;				
+
+							
+				else						
+					if (countu2 == 2) then			
+						if (l4 > l5) then
+								tempu = l5;
+								l5 = l4;
+								l4 = tempu;
+						else
+							X += 3;
+						fi;				
+											
+					else							
+							X += 3;
+					fi;
+				fi;
+			fi;			
+		fi;		
+		countu2 -= (1);		
+	elihw;
+	countu2 = 5;
+	countu1 -= (1);
+elihw;

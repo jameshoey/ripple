@@ -1,0 +1,8 @@
+while (X > 0) do
+X = X - 1;
+elihw;
+if (Y > 4) then
+Y = 10;
+else
+Y = 20;
+fi;

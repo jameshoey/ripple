@@ -1,0 +1,17 @@
+begin b1.0
+
+var count = 500;
+var reccount = 10;
+
+proc p1.0 fun is
+	
+		other = (100);
+	
+corp;
+
+while w1.0 (count > 0) do
+	call c1.0 fun;
+	count = (count - 1);
+elihw;
+
+end
